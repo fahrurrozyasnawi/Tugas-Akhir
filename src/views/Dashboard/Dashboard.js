@@ -28,6 +28,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardIcon from "components/Card/CardIcon.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import Button from "components/CustomButtons/Button.js"
 
 import { bugs, website, server } from "variables/general.js";
 
@@ -52,10 +53,7 @@ export default function Dashboard() {
         <GridItem xs={12} sm={12} md={5}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
-              <p className={classes.cardCategoryWhite}>
-                New employees on 15th September, 2016
-              </p>
+              <h4 className={classes.cardTitleWhite}>Data Absensi</h4>
             </CardHeader>
             <CardBody>
               <Table
@@ -70,6 +68,31 @@ export default function Dashboard() {
               />
             </CardBody>
           </Card>
+        </GridItem>
+      </GridContainer>
+      <GridContainer>
+        <GridItem md={8}>
+          <Card>
+            <CardHeader color="warning">
+              <h4>Absen</h4>
+            </CardHeader>
+            <CardBody>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem md={4}>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}>
+              <Button color="success">
+                Mulai Absen
+              </Button>
+            </GridItem>
+            <GridItem xs={12} sm={6} md={6}>
+              <Button color="danger">
+                Stop
+              </Button>
+            </GridItem>
+          </GridContainer>
         </GridItem>
       </GridContainer>
     </div>

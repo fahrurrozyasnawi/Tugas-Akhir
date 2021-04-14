@@ -9,6 +9,7 @@ import Button from "components/CustomButtons/Button.js"
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import { Table } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -28,7 +29,12 @@ export default function Mahasiswa(){
             <CardHeader color="primary">
               <h4>Data Mahasiswa</h4>
             </CardHeader>
-            <CardBody></CardBody>
+            <CardBody>
+              <Table
+                tableHeaderColor = "primary"
+                tableHead={["NIM", "Nama Mahasiswa", "Angkatan", "Jurusan", "Program Studi"]} 
+              />
+            </CardBody>
           </Card>
         </GridItem>
       </GridContainer>

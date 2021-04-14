@@ -32,6 +32,7 @@ import Typography from "views/Typography/Typography.js";
 import Icons from "views/Icons/Icons.js";
 import Maps from "views/Maps/Maps.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
+import Mahasiswa from "views/Mahasiswa/Mahasiswa.js"
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
@@ -49,7 +50,7 @@ const dashboardRoutes = [
     path: "/mahasiswa",
     name: "Mahasiswa",
     icon: Person,
-    component: MahasiswaData,
+    component: Mahasiswa,
     layout: "/admin"
   },
   {
